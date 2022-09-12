@@ -1,0 +1,143 @@
+/* allura-regular - latin */
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/allura-v18-latin-regular.woff') format('woff');
+}
+/* basic-regular - latin */
+@font-face {
+  font-family: 'Basic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/basic-v17-latin-regular.woff') format('woff');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background: center / cover no-repeat url(../images/background.jpg);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 7fr 1fr;
+}
+
+header {
+  color: #fff;
+  background-color: #000;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Allura', cursive;
+  font-size: 72px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+p, ul {
+  font-family: 'Basic', Arial, Helvetica, sans-serif;
+}
+
+ul {
+  width: 300px;
+  font-size: 22px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+li {
+  padding-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+li:hover {
+  transform: translateY(-10px);
+}
+
+li.active {
+  border-bottom: 3px solid #fff;
+  transform: translateY(-10px);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  height: 400px;
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 28px;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu {
+  padding: 30px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.menu div {
+  text-align: center;
+}
+
+.menu img {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.staff {
+  padding: 30px;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.staff > div {
+  display: flex;
+  gap: 15px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+.staff div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.staff img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
