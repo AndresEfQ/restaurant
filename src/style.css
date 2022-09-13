@@ -43,7 +43,7 @@ h1 {
   align-items: center;
 }
 
-p, ul {
+p, ul, footer {
   font-family: 'Basic', Arial, Helvetica, sans-serif;
 }
 
@@ -93,11 +93,10 @@ main {
 }
 
 .menu {
+  display: none;
   padding: 30px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  opacity: 0.8;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
@@ -113,9 +112,9 @@ main {
 }
 
 .staff {
+  display: none;
   padding: 30px;
   color: #fff;
-  display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 40px;
   z-index: 1;
@@ -140,4 +139,46 @@ main {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright img {
+  height: 30px;
+  filter: invert(98%) sepia(1%) saturate(2290%) hue-rotate(177deg) brightness(101%) contrast(91%);
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits {
+  font-size: 14px;
+  color: rgb(172, 172, 172);
+  text-align: center;
+}
+
+.credits a {
+  color: rgb(172, 172, 172);
+  display: inline;
+  margin: 0;
 }
